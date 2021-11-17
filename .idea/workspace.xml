@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57089a74-0d22-4f96-9b65-f97ccfe99374" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="except" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/ru/netology/domain/Book.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ru/netology/domain/NotFoundException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ru/netology/domain/Smartphone.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ru/netology/manager/NotFoundExceptionManager.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="20iYY9Ehp31SfFKJTSHintzYJco" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Olga\Desktop\Java\Products" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.netology.manager" />
+      <recent name="ru.netology.repository" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+      <command value="mvn site" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.NotFoundExceptionManagerTest.shouldDelete">
+    <configuration name="NotFoundExceptionManagerTest.shouldDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Products" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.NotFoundExceptionManagerTest" />
+      <option name="METHOD_NAME" value="shouldDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldSearchName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Products" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldSearchName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldSearchNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Products" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldSearchNothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldSearchOtherProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Products" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldSearchOtherProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldSearchTrash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Products" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.manager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.manager.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldSearchTrash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductManagerTest.shouldSearchTrash" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldSearchOtherProduct" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldSearchNothing" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldSearchName" />
+        <item itemvalue="JUnit.NotFoundExceptionManagerTest.shouldDelete" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57089a74-0d22-4f96-9b65-f97ccfe99374" name="Changes" comment="" />
+      <created>1636528921431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636528921431</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="except" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="18" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="expected" />
+        <watch expression="game" />
+        <watch expression="honor" />
+        <watch expression="actual" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
