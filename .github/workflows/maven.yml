@@ -3,12 +3,7 @@
 
 name: Java CI with Maven
 
-<<<<<<< HEAD
-on:  push,
-  pull_request [ master]
-=======
 on: [ push, pull_request ]
->>>>>>> 2502afdf22aef7e2f87c5d9ba8e57d847fee96c0
 
 jobs:
   build:
