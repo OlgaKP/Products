@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Radio" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Products" target="11" />
+      <module name="Radio" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
