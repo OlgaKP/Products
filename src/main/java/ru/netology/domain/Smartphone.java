@@ -6,24 +6,24 @@ import lombok.EqualsAndHashCode;
 import java.util.Objects;
 
 @Data
-//@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 
 public class Smartphone extends Product {
-    private String prodicer;
+    private String producer;
 
     public Smartphone() { super();}
 
-    public Smartphone(int id, String name, int price, String prodicer) {
+    public Smartphone(int id, String name, int price, String producer) {
         super(id, name, price);
-        this.prodicer = prodicer;
+        this.producer = producer;
     }
 
-    public String getProdicer() {
-        return prodicer;
+    public String getProducer() {
+        return producer;
     }
 
-    public void setProdicer(String prodicer) {
-        this.prodicer = prodicer;
+    public void setProducer(String producer) {
+        this.producer = producer;
     }
 
 //    @Override

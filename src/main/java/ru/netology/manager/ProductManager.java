@@ -3,22 +3,25 @@ package ru.netology.manager;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
+import ru.netology.repository.ProductRepository;
 
 public class ProductManager {
-    private Product[] items = new Product[0];
+    private ProductRepository repository = new ProductRepository();
+
+    public ProductManager(ProductRepository repository) {
+        this.repository = repository;
+    }
+
+    public ProductManager() { }
 
     public void add(Product item) {
-        int length = items.length + 1;
-        Product[] tmp = new Product[length];
-        System.arraycopy(items, 0, tmp, 0, items.length);
-        int lastIndex = tmp.length - 1;
-        tmp[lastIndex] = item;
-        items = tmp;
+        repository.save(item);
     }
 
 //    public Product[] getProducts() {  return items; }
 
     public Product[] searchBy(String text) {
+        Product[] items = repository.findAll();
         Product[] result = new Product[0];
         for (Product product: items) {
             if (matches(product, text)) {
@@ -48,7 +51,7 @@ public class ProductManager {
         }
         else if (product instanceof Smartphone) {
             Smartphone smartphone = (Smartphone) product;
-            if (smartphone.getProdicer().contains(search)) {
+            if (smartphone.getProducer().contains(search)) {
                 return true;
             }
             if (smartphone.getName().contains(search)) {
