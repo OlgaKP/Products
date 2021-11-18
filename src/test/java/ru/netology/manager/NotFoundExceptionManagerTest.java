@@ -1,5 +1,6 @@
 package ru.netology.manager;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
@@ -8,15 +9,18 @@ import ru.netology.domain.Smartphone;
 import static org.junit.jupiter.api.Assertions.*;
 
 class NotFoundExceptionManagerTest {
+    private NotFoundExceptionManager manager = new NotFoundExceptionManager();
+    private Product honor = new Smartphone(2, "Honor", 10000, "Hu");
+    private Product game = new Book(1, "Game", 1000, "KA");
+
+    @BeforeEach
+    public void setUp() {
+        manager.add(honor);
+        manager.add(game);
+    }
 
     @Test
     public void shouldDeleteId (){
-        NotFoundExceptionManager manager = new NotFoundExceptionManager();
-
-        Product honor = new Smartphone(2, "Honor", 10000, "Hu");
-        manager.add(honor);
-        Product game = new Book(1, "Game", 1000, "KA");
-        manager.add(game);
         manager.removeById(1);
 
         Product[] actual = manager.getProducts();
@@ -25,13 +29,7 @@ class NotFoundExceptionManagerTest {
     }
 
     @Test
-    public void shouldDeleteNonId (){
-        NotFoundExceptionManager manager = new NotFoundExceptionManager();
-
-        Product honor = new Smartphone(2, "Honor", 10000, "Hu");
-        manager.add(honor);
-        Product game = new Book(1, "Game", 1000, "KA");
-        manager.add(game);
+    public void shouldDeleteNotExistId (){
         manager.removeById(3);
 
         Product[] actual = manager.getProducts();

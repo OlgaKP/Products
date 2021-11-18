@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import java.util.Objects;
 
 @Data
-//@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 
 public class Book extends Product {
     //super(name);

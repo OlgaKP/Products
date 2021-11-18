@@ -4,45 +4,26 @@ import ru.netology.domain.Book;
 import ru.netology.domain.NotFoundException;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
+import ru.netology.repository.NotFoundExceptionRepository;
 
 public class NotFoundExceptionManager {
-    private Product[] items = new Product[0];
+    private NotFoundExceptionRepository repository = new NotFoundExceptionRepository();
+
+    public NotFoundExceptionManager(NotFoundExceptionRepository repository) {
+        this.repository = repository;
+    }
+
+    public NotFoundExceptionManager() {
+    }
 
     public void add(Product item) {
-        int length = items.length + 1;
-        Product[] tmp = new Product[length];
-        System.arraycopy(items, 0, tmp, 0, items.length);
-        int lastIndex = tmp.length - 1;
-        tmp[lastIndex] = item;
-        items = tmp;
+        repository.save(item);
     }
 
-    public Product[] getProducts() {  return items; }
+    public void removeById(int id) {repository.removeById(id);}
 
-    public void removeById(int id) {
-        int length = items.length - 1;
-        Product[] tmp = new Product[length];
-        int index = 0;
-        if (findById(id) == null) {
-            throw new NotFoundException(
-                    "Element with id: " + id + " not found"
-            );
-        }
-        for (Product item : items) {
-            if (item.getId() != id) {
-                tmp[index] = item;
-                index++;
-            }
-        }
-        items = tmp;
-    }
-
-    public Product findById(int id) {
-        for (Product item : items) {
-            if (item.getId() == id) {
-                return item;
-            }
-        }
-        return null;
+    public Product[] getProducts() {
+        Product[] items = repository.findAll();
+        return items;
     }
 }
