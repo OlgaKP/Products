@@ -3,6 +3,7 @@ package ru.netology.manager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Book;
+import ru.netology.domain.NotFoundException;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
 
@@ -30,10 +31,11 @@ class NotFoundExceptionManagerTest {
 
     @Test
     public void shouldDeleteNotExistId (){
-        manager.removeById(3);
-
         Product[] actual = manager.getProducts();
         Product[] expected = new Product[]{honor, game};
-        assertArrayEquals(actual, expected);
+
+        assertThrows(NotFoundException.class, () -> {
+            manager.removeById(3);
+        });
     }
 }
